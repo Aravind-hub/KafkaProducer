@@ -20,7 +20,7 @@ public class Employee {
 	
 	@JsonProperty("BirthDay")
 	@JsonSerialize(using = CustomLocalDateSerializer.class)
-	@XmlJavaTypeAdapter(LocalDateAdapter.class)
+	//@XmlJavaTypeAdapter(LocalDateAdapter.class)
 	private LocalDate birthDate;
 
 	public Employee(String employeeId, String name, LocalDate birthDate) {
